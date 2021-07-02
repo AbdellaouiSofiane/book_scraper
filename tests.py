@@ -44,6 +44,16 @@ class SoupTestCase(unittest.TestCase):
 			)
 			index += 1
 
+	def test_get_book_url(self):
+		soup = get_soup()
+		category_list = get_category_list(soup)
+		for category in category_list:
+			for book_url in get_category_books_urls(soup, category):
+				self.assertRegex(
+					book_url,
+					re.compile(rf'^{self.base_url}catalogue/([-\w]+)/index.html')
+				)
+
 
 if __name__ == '__main__':
     unittest.main()
