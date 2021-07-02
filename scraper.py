@@ -11,7 +11,12 @@ def get_soup(category_url=None):
 	response = requests.get(url)
 	return BeautifulSoup(response.content, features="html.parser")
 
+def get_category_list(soup):
+	ul = soup.find('ul', {'class': 'nav nav-list'}).find('ul')
+	return [category for category in ul.stripped_strings]
+
 
 if __name__ == "__main__":
 	soup = get_soup()
-	print(soup.prettify())
+	category_list = get_category_list(soup)
+	print(category_list)
