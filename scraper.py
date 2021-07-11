@@ -2,8 +2,10 @@ import requests
 import re
 import csv
 from bs4 import BeautifulSoup
+from urllib.request import urlretrieve
 from urllib.parse import urljoin
 from pathlib import Path
+from slugify import slugify
 
 
 BASE_URL = "http://books.toscrape.com/"
@@ -103,11 +105,19 @@ def get_book_data(url):
 		'image_url': get_image_url(soup, url)
 	}
 
+def save_book_cover(data):
+	image_url = data.get('image_url')
+	ext = image_url.split('.')[-1]
+	name = slugify(data.get('title'))
+	filename = f'images/{name}.{ext}'
+	urlretrieve(image_url, filename)
+
 
 if __name__ == "__main__":
 	soup = get_soup_from_url()
 	category_list = get_category_list(soup)
 	Path("data/").mkdir(parents=True, exist_ok=True)
+	Path("images/").mkdir(parents=True, exist_ok=True)
 	for category in category_list:
 		print(f'Writing csv file for category: {category}')
 		with open(f'data/{category}.csv', 'w', newline='') as csvfile:
@@ -117,3 +127,4 @@ if __name__ == "__main__":
 				data = get_book_data(book_url)
 				data['category'] = category
 				writer.writerow(data)
+				save_book_cover(data)
