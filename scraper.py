@@ -1,10 +1,24 @@
 import requests
 import re
-from urllib.parse import urljoin
+import csv
 from bs4 import BeautifulSoup
-import pprint
+from urllib.parse import urljoin
+from pathlib import Path
+
 
 BASE_URL = "http://books.toscrape.com/"
+FIELDNAMES = [
+	'product_page_url',
+	'universal_ product_code (upc)',
+	'title',
+	'price_including_tax',
+	'price_excluding_tax',
+	'product_description',
+	'number_available',
+	'category',
+	'review_rating',
+	'image_url'
+]
 
 def get_soup_from_url(url=BASE_URL):
 	response = requests.get(url)
@@ -77,24 +91,29 @@ def get_rating(soup):
 
 def get_book_data(url):
 	soup = get_soup_from_url(url)
-	data = {
-		'url': url,
-		'UPC': get_UPC(soup),
+	return {
+		'product_page_url': url,
+		'universal_ product_code (upc)': get_UPC(soup),
 		'title': get_title(soup),
-		'price_incl_tax': get_price_incl_tax(soup),
-		'price_excl_tax': get_price_excl_tax(soup),
-		'description': get_description(soup),
-		'availability': get_availability(soup),
-		'image_url': get_image_url(soup, url),
-		'rating': get_rating(soup)
+		'price_including_tax': get_price_incl_tax(soup),
+		'price_excluding_tax': get_price_excl_tax(soup),
+		'number_available': get_availability(soup),
+		'product_description': get_description(soup),
+		'review_rating': get_rating(soup),
+		'image_url': get_image_url(soup, url)
 	}
-	return data
 
 
 if __name__ == "__main__":
 	soup = get_soup_from_url()
 	category_list = get_category_list(soup)
+	Path("data/").mkdir(parents=True, exist_ok=True)
 	for category in category_list:
-		print('in category', category)
-		for book_url in get_books_urls_by_category(soup, category):
-			pprint.pprint(get_book_data(book_url))
+		print(f'Writing csv file for category: {category}')
+		with open(f'data/{category}.csv', 'w', newline='') as csvfile:
+			writer = csv.DictWriter(csvfile, fieldnames=FIELDNAMES)
+			writer.writeheader()
+			for book_url in get_books_urls_by_category(soup, category):
+				data = get_book_data(book_url)
+				data['category'] = category
+				writer.writerow(data)
