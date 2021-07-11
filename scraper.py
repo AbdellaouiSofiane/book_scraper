@@ -10,7 +10,7 @@ def get_soup_from_url(url=BASE_URL):
 	return BeautifulSoup(response.content, features="html.parser")
 
 def get_category_list(soup):
-	ul = soup.find('ul', {'class': 'nav nav-list'}).find('ul')
+	ul = soup.find('ul', class_='nav nav-list').find('ul')
 	return [category for category in ul.stripped_strings]
 
 def get_category_base_url(soup, category):
@@ -28,15 +28,15 @@ def get_next_page_url(soup, base_url):
 def get_books_urls_by_category(soup, category):
 	book_list = []
 	category_base_url = get_category_base_url(soup, category)
-	current_page = category_base_url
-	while current_page:
-		soup = get_soup_from_url(url=current_page)
-		books = soup.find_all('article', {'class': 'product_pod'})
+	page = category_base_url
+	while page:
+		soup = get_soup_from_url(url=page)
+		books = soup.find_all('article', class_='product_pod')
 		for book in books:
 			book_list.append(
 				urljoin(category_base_url, book.a.get('href'))
 			)
-		current_page = get_next_page_url(soup, category_base_url)
+		page = get_next_page_url(soup, category_base_url)
 	return book_list
 
 
