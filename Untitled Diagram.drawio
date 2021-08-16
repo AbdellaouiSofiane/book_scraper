@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-08-16T10:12:23.321Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="ONjucz3Iaa3iNNmcHBnc" version="14.9.5" type="github" pages="3">
+<mxfile host="app.diagrams.net" modified="2021-08-16T10:13:39.252Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="-nGxFBtJJWh-e-ty5kb5" version="14.9.5" type="github" pages="3">
   <diagram id="Sx80eRwoRhXMcVrHA14e" name="Authentication">
     <mxGraphModel dx="1182" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -433,7 +433,7 @@
           <mxGeometry x="670" y="550" width="90" height="55" as="geometry" />
         </mxCell>
         <mxCell id="JxXT9dZYn4Q9yvD4UVGO-0" value="Cancel event" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="ZiUzqkXfoX1zGjb_c4Og-1">
-          <mxGeometry x="300" y="130" width="90" height="55" as="geometry" />
+          <mxGeometry x="491.5" y="130" width="90" height="55" as="geometry" />
         </mxCell>
         <mxCell id="ORQDVAg95lP-_641zyr6-0" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;dashed=1;startArrow=classic;startFill=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="ZiUzqkXfoX1zGjb_c4Og-1" source="rcPgMOxuA-6RP6GE4M5m-0" target="PTAE0SMPsKXaiq6jrHo--0">
           <mxGeometry relative="1" as="geometry">
