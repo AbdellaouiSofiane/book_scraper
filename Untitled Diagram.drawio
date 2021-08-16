@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-16T10:43:51.667Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="T4DhsHJXPrqLdKdKS0pE" version="14.9.5" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-16T10:50:01.925Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.107 Safari/537.36" etag="uHsU3HBrbompuDMnPOcq" version="14.9.5" type="github" pages="5">
   <diagram id="Sx80eRwoRhXMcVrHA14e" name="Authentication">
-    <mxGraphModel dx="1182" dy="771" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="985" dy="643" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -66,11 +66,6 @@
         <mxCell id="ECMwFdhYDGbr-x0ZbSeB-20" value="Login" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="160" width="90" height="55" as="geometry" />
         </mxCell>
-        <mxCell id="E_-s2oACkNz3QFp-73nn-5" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ECMwFdhYDGbr-x0ZbSeB-30" target="E_-s2oACkNz3QFp-73nn-1">
-          <mxGeometry x="-0.1837" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
-        </mxCell>
         <mxCell id="ECMwFdhYDGbr-x0ZbSeB-30" value="Register" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="292.5" width="90" height="55" as="geometry" />
         </mxCell>
@@ -79,11 +74,6 @@
         </mxCell>
         <mxCell id="ECMwFdhYDGbr-x0ZbSeB-52" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=none;endFill=0;dashed=1;startArrow=classic;startFill=1;" parent="1" source="ECMwFdhYDGbr-x0ZbSeB-32" target="ECMwFdhYDGbr-x0ZbSeB-30" edge="1">
           <mxGeometry relative="1" as="geometry" />
-        </mxCell>
-        <mxCell id="E_-s2oACkNz3QFp-73nn-3" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;dashed=1;" edge="1" parent="1" source="ECMwFdhYDGbr-x0ZbSeB-32" target="E_-s2oACkNz3QFp-73nn-1">
-          <mxGeometry x="-0.1919" relative="1" as="geometry">
-            <mxPoint as="offset" />
-          </mxGeometry>
         </mxCell>
         <mxCell id="ECMwFdhYDGbr-x0ZbSeB-32" value="Reset password" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="300" y="430" width="90" height="55" as="geometry" />
@@ -120,9 +110,6 @@
         </mxCell>
         <mxCell id="mRWd31tZiwl8Pty_uc2d-1" value="Logout" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="550" y="250" width="90" height="55" as="geometry" />
-        </mxCell>
-        <mxCell id="E_-s2oACkNz3QFp-73nn-1" value="Send confirmation email" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="550" y="360" width="90" height="55" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
