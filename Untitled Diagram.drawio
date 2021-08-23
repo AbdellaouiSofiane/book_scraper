@@ -1,6 +1,6 @@
-<mxfile host="app.diagrams.net" modified="2021-08-23T08:42:41.071Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="Z87fSsNr7C-YrR1NCE2-" version="14.9.6" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2021-08-23T09:07:36.423Z" agent="5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/92.0.4515.159 Safari/537.36" etag="PRevnZSY6nf1JiJbG8ir" version="14.9.6" type="github" pages="5">
   <diagram id="Sx80eRwoRhXMcVrHA14e" name="Authentication">
-    <mxGraphModel dx="1021" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1391" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -114,7 +114,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BAZM7-qq4t-G2bQRdrPu" name="Chat">
-    <mxGraphModel dx="868" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1182" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="fuMEjZ2mYaRb5mKkh7il-0" />
         <mxCell id="fuMEjZ2mYaRb5mKkh7il-1" parent="fuMEjZ2mYaRb5mKkh7il-0" />
@@ -232,7 +232,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="roDyY9XeNie3ibjOZ0cx" name="Calendar">
-    <mxGraphModel dx="1021" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1391" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="ZiUzqkXfoX1zGjb_c4Og-0" />
         <mxCell id="ZiUzqkXfoX1zGjb_c4Og-1" parent="ZiUzqkXfoX1zGjb_c4Og-0" />
@@ -346,7 +346,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="iNPZvnBiNlm6s1h3ubK9" name="Tasks">
-    <mxGraphModel dx="1021" dy="575" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1391" dy="875" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="WOYatVIqLgC8-8maOKsI-0" />
         <mxCell id="WOYatVIqLgC8-8maOKsI-1" parent="WOYatVIqLgC8-8maOKsI-0" />
@@ -411,7 +411,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="BxIJw6-1rUT2miX8hC7Z" name="Dashboard">
-    <mxGraphModel dx="868" dy="489" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
+    <mxGraphModel dx="1182" dy="744" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" math="0" shadow="0">
       <root>
         <mxCell id="LQwduiaYqo5e5l77KT09-0" />
         <mxCell id="LQwduiaYqo5e5l77KT09-1" parent="LQwduiaYqo5e5l77KT09-0" />
@@ -471,6 +471,30 @@
         </mxCell>
         <mxCell id="bQ0vmziZnP8A26UxJSUl-0" value="Show events" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="LQwduiaYqo5e5l77KT09-1">
           <mxGeometry x="300" y="430" width="90" height="55" as="geometry" />
+        </mxCell>
+        <mxCell id="kKATsR-GWFVr6kwSmm5w-0" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="LQwduiaYqo5e5l77KT09-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="320" as="sourcePoint" />
+            <mxPoint x="300.0000000000007" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKATsR-GWFVr6kwSmm5w-1" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="LQwduiaYqo5e5l77KT09-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="230" y="188" />
+            </Array>
+            <mxPoint x="300.0000000000007" y="187.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="kKATsR-GWFVr6kwSmm5w-2" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" edge="1" parent="LQwduiaYqo5e5l77KT09-1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="230" y="320" as="sourcePoint" />
+            <Array as="points">
+              <mxPoint x="230" y="458" />
+            </Array>
+            <mxPoint x="300.0000000000007" y="457.5" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
       </root>
     </mxGraphModel>
